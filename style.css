@@ -1,0 +1,97 @@
+:root {
+    --bg-color: #fcf8e3;
+    --primary-maroon: #8e3e3e;
+    --accent-blue: #327af6;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: var(--primary-maroon);
+}
+
+/* Intro Animation */
+#intro-animation {
+    position: fixed;
+    inset: 0;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: opacity 0.5s;
+}
+
+.logo-text {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: bounceIn 1.2s ease;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.3); opacity: 0; }
+    50% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+/* Progress Bar */
+.progress-container {
+    position: absolute;
+    top: 20px;
+    width: 90%;
+    display: flex;
+    gap: 5px;
+}
+
+.step {
+    height: 6px;
+    flex: 1;
+    background: #f08a8a;
+    border-radius: 10px;
+}
+
+.step.completed { background: var(--accent-blue); }
+
+/* Pages */
+.page {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.page.active { display: flex; }
+
+.btn-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-maroon { background: var(--primary-maroon); color: white; width: 100%; }
+.btn-blue { background: var(--accent-blue); color: white; flex: 1; }
+.btn-back { background: var(--accent-blue); color: white; flex: 1; opacity: 0.7; }
+
+.payment-card {
+    border: 2px dashed var(--primary-maroon);
+    padding: 20px;
+    border-radius: 10px;
+}
