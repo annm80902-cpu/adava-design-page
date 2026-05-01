@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADAVA Arts & Designs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="intro-animation">
+        <div class="logo-text">ADAVA ARTS</div>
+        <p>Loading Excellence...</p>
+    </div>
+
+    <div class="progress-container" id="progress-bar"></div>
+
+    <section class="page active" id="p1">
+        <h2>Welcome to <br> ADAVA ARTS & DESIGNS</h2>
+        <p>We are so delighted to have you on our link.</p>
+        <button class="btn-maroon" onclick="move(2)">CONTINUE</button>
+    </section>
+
+    <section class="page" id="p2">
+        <h2>Adava Arts & Designs</h2>
+        <div class="content-box">
+            <p>Adava arts produces various types of quality designs.</p>
+            <a href="http://adava-arts.infinityfreeapp.com" target="_blank">Visit Website</a>
+        </div>
+        <div class="btn-container">
+            <button class="btn-back" onclick="move(1)">BACK</button>
+            <button class="btn-blue" onclick="move(3)">CONTINUE</button>
+        </div>
+    </section>
+
+    <section class="page" id="p3">
+        <h2>Process Design</h2>
+        <p>To process your design we need more information from you through WhatsApp.</p>
+        <button class="btn-maroon" onclick="window.open('https://wa.me/09025332093', '_blank')">
+            Tap to WhatsApp
+        </button>
+        <div class="btn-container">
+            <button class="btn-back" onclick="move(2)">BACK</button>
+            <button class="btn-blue" onclick="move(4)">CONTINUE</button>
+        </div>
+    </section>
+
+    <section class="page" id="p4">
+        <h2>Payment Details</h2>
+        <div class="payment-card">
+            <p>Make payments to:</p>
+            <h3>2016554142</h3>
+            <p>UBA | MARY ANN AMEH</p>
+        </div>
+        <div class="btn-container">
+            <button class="btn-back" onclick="move(3)">BACK</button>
+            <button class="btn-blue" onclick="move(5)">FINISH</button>
+        </div>
+    </section>
+
+    <section class="page" id="p5">
+        <h2>Thank You!</h2>
+        <button class="btn-blue" onclick="location.reload()">HOME</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
